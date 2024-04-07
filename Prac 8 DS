@@ -1,0 +1,21 @@
+Aim:- Practical of Hypothesis testing
+Small Sample Test:
+a) t – test for single population mean:
+> x=c(70, 120, 110, 101, 88, 83, 95, 89, 107, 125)
+> Result=t.test(x)
+> print(Result)
+b) Difference between two sample means:
+> nonsmokers=c(18,22,21,17,20,17,23,20,22,21)
+> smokers=c(16,20,14,21,20,18,13,15,17,21)
+> Result=t.test(nonsmokers,smokers)
+> print(Result)
+c) Paired t – test:
+> x=c(110,120,123,132,125)
+> y=c(120,118,125,136,121)
+> Result=t.test(x,y,paired = TRUE,alternative = "less")
+> print(Result)
+Example 2:-
+> x=c(12.9, 13.5, 12.8, 15.6, 17.2, 19.2, 12.6, 15.3, 14.4, 11.3)
+> y=c(12.0, 12.2, 11.2, 13.0, 15.0, 15.8, 12.2, 13.4, 12.9, 11.0)
+> Result=t.test(x,y,paired = TRUE,alternative = "greater")
+> print(Result)
