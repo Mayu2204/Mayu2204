@@ -1,0 +1,24 @@
+Aim: Practical of Data collection, Data curation and management for Large-scale Data system
+(such as MongoDB)
+
+command :
+steps :
+1.MongoDB Create database:
+2. MongoDB Drop Database:
+db.dropDatabase()
+3.MongoDB Create collection:
+show collections
+4. MongoDB Drop collection:
+db.collection_name.drop()
+5.MongoDB Insert Document:
+db.collection_name.insert()
+6.MongoDB Query Document:
+WriteResult({ "nInserted" : 1 })
+db.students.find()
+7.MongoDB Update Document:
+8.Delete document in MongoDB:
+9.MongoDB Projection:
+10. limit() method in MongoDB
+11. MongoDB Skip() Method
+12.Sorting of Documents in MongoDB:
+13.MongoDB Indexing:
