@@ -1,0 +1,18 @@
+write a program to implement simple web crawler 
+Program :
+
+import requests
+from bs4 import BeautifulSoup
+def web(page, WebUrl):
+    if (page>0):
+   	print ("Hi")
+	url = WebUrl
+	code = requests.get (url)
+	plain = code.text
+	s = BeautifulSoup(plain, "html.parser")
+	for link in s.findAll('a', {'class' : 's-access-detail-page'}):
+	    tet = link.get('title')
+	    print (tet)
+	    tet2 = link.get('href')
+	    print (tet2)
+web(1, 'https://www.amazon.in/Redmi-Midnight-Black-256GB-Storage/dp/BOCRQFR6F4')
